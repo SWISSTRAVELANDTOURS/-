@@ -274,63 +274,62 @@
       color: var(--mist); line-height: 1.7;
     }
 
-    /* ── DESTINATIONS ── */
-    .dest-section { padding: 7rem 5rem; background: var(--light); }
-    .dest-header {
-      display: flex; justify-content: space-between;
-      align-items: flex-end; margin-bottom: 3rem;
-    }
-    .dest-grid {
-      display: grid;
-      grid-template-columns: 1.6fr 1fr 1fr;
-      grid-template-rows: 260px 260px;
-      gap: 1rem;
-    }
-    .dest-card {
-      position: relative; border-radius: 4px;
-      overflow: hidden; cursor: pointer;
-    }
-    .dest-card:first-child { grid-row: span 2; }
-    .dest-bg {
-      position: absolute; inset: 0;
-      transition: transform 0.6s ease;
-    }
-    .dest-card:hover .dest-bg { transform: scale(1.05); }
-    .d1 .dest-bg { background: linear-gradient(160deg, #8B3A1C 0%, #4A1E0A 40%, #2A1505 70%, #1A3020 100%); }
-    .d2 .dest-bg { background: linear-gradient(160deg, #1E4A3A 0%, #0D2A1F 50%, #1a3a2a 100%); }
-    .d3 .dest-bg { background: linear-gradient(160deg, #3A2A1A 0%, #5C3D1E 40%, #8B6030 70%, #3A2010 100%); }
-    .d4 .dest-bg { background: linear-gradient(160deg, #1A2A3A 0%, #0D1A2A 50%, #2A1A3A 100%); }
-    .d5 .dest-bg { background: linear-gradient(160deg, #3A1A1A 0%, #5C2020 50%, #8B3030 100%); }
-    .dest-terrain {
-      position: absolute; bottom: 0; left: 0; right: 0; height: 55%;
-      opacity: 0.35; pointer-events: none;
-    }
-    .dest-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(10,6,4,0.88) 0%, rgba(10,6,4,0.1) 55%, transparent 100%);
-    }
-    .dest-info {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 1.5rem; z-index: 2;
-    }
-    .dest-region {
-      font-size: 0.62rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--green);
-      margin-bottom: 0.3rem;
-    }
-    .dest-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem; font-weight: 700;
-      color: var(--white); line-height: 1.1;
-    }
-    .dest-card:first-child .dest-name { font-size: 2.1rem; }
-    .dest-tag {
-      position: absolute; top: 1rem; left: 1rem;
-      background: var(--crimson);
-      color: var(--white); font-size: 0.6rem;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 0.2rem 0.6rem; border-radius: 2px;
-    }
+    <!-- ── DESTINATIONS (Oman's Finest Spots) ── -->
+<section id="destinations" class="destinations-section">
+  <div class="section-title-container">
+    <h2 class="section-title">Oman's Finest Spots</h2>
+    <div class="title-underline"></div>
+  </div>
+
+  <div class="destinations-grid">
+    
+    <!-- Muscat Card -->
+    <div class="destination-card" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('muscat.jpg') no-repeat center center/cover;">
+      <div class="card-content">
+        <h3>Muscat City Tour</h3>
+        <p>Explore the stunning Sultan Qaboos Grand Mosque, Muttrah Corniche, and the historic Al Alam Palace where ancient heritage meets modern beauty.</p>
+        <a href="https://wa.me/968XXXXXXXX" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Wahiba Sands Card -->
+    <div class="destination-card" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('wahiba.jpg') no-repeat center center/cover;">
+      <div class="card-content">
+        <h3>Wahiba Sands Desert</h3>
+        <p>Experience the golden sea of dunes. Enjoy thrilling dune bashing, traditional Bedouin hospitality, and a breathtaking sunset over the desert.</p>
+        <a href="https://wa.me/968XXXXXXXX" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Nizwa Card -->
+    <div class="destination-card" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('nizwa.jpg') no-repeat center center/cover;">
+      <div class="card-content">
+        <h3>Nizwa & Cultural Heritage</h3>
+        <p>Step back in time at Oman's ancient capital. Visit the massive circular Nizwa Fort and the vibrant traditional Friday silver souq.</p>
+        <a href="https://wa.me/968XXXXXXXX" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Jebel Shams Card -->
+    <div class="destination-card" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('jebel.jpg') no-repeat center center/cover;">
+      <div class="card-content">
+        <h3>Jebel Shams (Grand Canyon)</h3>
+        <p>Stand on the highest peak in Oman. Witness the spectacular deep drop of Wadi Nakhr, offering cool mountain air and incredible trekking trails.</p>
+        <a href="https://wa.me/968XXXXXXXX" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Salalah Card -->
+    <div class="destination-card" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.75)), url('salalah.jpg') no-repeat center center/cover;">
+      <div class="card-content">
+        <h3>Salalah (Khareef Season)</h3>
+        <p>Escape the heat to a green paradise. Experience misty mountains, gushing waterfalls at Wadi Darbat, and lush tropical fruit plantations.</p>
+        <a href="https://wa.me/968XXXXXXXX" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     /* ── STATS ── */
     .stats-section {
