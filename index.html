@@ -314,12 +314,22 @@
       transition: transform 0.6s ease;
     }
     .dest-card:hover .dest-bg { transform: scale(1.05); }
-    /* Oman destination color scenes */
-    .d1 .dest-bg { background: linear-gradient(160deg, #8B3A1C 0%, #4A1E0A 40%, #2A1505 70%, #1A3020 100%); }
-    .d2 .dest-bg { background: linear-gradient(160deg, #1E4A3A 0%, #0D2A1F 50%, #1a3a2a 100%); }
-    .d3 .dest-bg { background: linear-gradient(160deg, #3A2A1A 0%, #5C3D1E 40%, #8B6030 70%, #3A2010 100%); }
-    .d4 .dest-bg { background: linear-gradient(160deg, #1A2A3A 0%, #0D1A2A 50%, #2A1A3A 100%); }
-    .d5 .dest-bg { background: linear-gradient(160deg, #3A1A1A 0%, #5C2020 50%, #8B3030 100%); }
+    /* Oman destination photos */
+    .d1 .dest-bg {
+      background: url('muscat.jpg') center center/cover no-repeat;
+    }
+    .d2 .dest-bg {
+      background: url('wahiba.jpg') center center/cover no-repeat;
+    }
+    .d3 .dest-bg {
+      background: url('salalah.jpg') center center/cover no-repeat;
+    }
+    .d4 .dest-bg {
+      background: url('jebel.jpg') center center/cover no-repeat;
+    }
+    .d5 .dest-bg {
+      background: url('nizwa.jpg') center center/cover no-repeat;
+    }
     /* SVG terrain per card */
     .dest-terrain {
       position: absolute; bottom: 0; left: 0; right: 0; height: 55%;
@@ -542,6 +552,20 @@
     .d3  { transition-delay: 0.22s !important; }
     .d4  { transition-delay: 0.32s !important; }
 
+    
+.main-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
       nav, nav.scrolled { padding: 1.2rem 1.5rem; }
@@ -573,25 +597,7 @@
 <!-- ── NAV ── -->
 <nav id="nav">
   <a href="#" class="nav-logo">
-    <svg width="180" height="44" viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Globe -->
-      <circle cx="20" cy="22" r="16" fill="#2A5C45" stroke="#1E4433" stroke-width="1"/>
-      <!-- Globe latitude lines -->
-      <ellipse cx="20" cy="22" rx="7" ry="16" stroke="rgba(255,255,255,0.25)" stroke-width="0.8" fill="none"/>
-      <line x1="4" y1="22" x2="36" y2="22" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
-      <line x1="6" y1="14" x2="34" y2="14" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-      <line x1="6" y1="30" x2="34" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-      <!-- Red plane arc / swoosh -->
-      <path d="M8 10 Q20 2 34 12" stroke="#C0272D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      <!-- Small plane at end of arc -->
-      <polygon points="34,12 30,9 31,13" fill="#C0272D"/>
-      <!-- Text: Swiss -->
-      <text x="44" y="18" font-family="'Playfair Display', serif" font-size="13" font-weight="700" fill="white" letter-spacing="0.5">Swiss</text>
-      <!-- Text: Travel & Tours -->
-      <text x="44" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500" fill="rgba(255,255,255,0.75)" letter-spacing="1.5">TRAVEL &amp; TOURS</text>
-      <!-- Tagline -->
-      <text x="44" y="42" font-family="'Inter', sans-serif" font-size="6.5" font-weight="400" fill="rgba(212,168,75,0.7)" letter-spacing="1.8">MUSCAT · OMAN</text>
-    </svg>
+    <img src="1000038711.png" alt="Swiss Travel & Tours" class="main-logo">
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -684,7 +690,7 @@
   <div class="marquee-track">
     <span class="marquee-item">✈ Flight Booking</span>
     <span class="marquee-item marquee-sep">✦</span>
-    <span class="marquee-item">🚢 Dhow Cruises</span>
+    <span class="marquee-item">🚢 Cruises</span>
     <span class="marquee-item marquee-sep">✦</span>
     <span class="marquee-item">🏨 Hotel Booking</span>
     <span class="marquee-item marquee-sep">✦</span>
@@ -696,7 +702,7 @@
     <span class="marquee-item marquee-sep">✦</span>
     <span class="marquee-item">✈ Flight Booking</span>
     <span class="marquee-item marquee-sep">✦</span>
-    <span class="marquee-item">🚢 Dhow Cruises</span>
+    <span class="marquee-item">🚢 Cruises</span>
     <span class="marquee-item marquee-sep">✦</span>
     <span class="marquee-item">🏨 Hotel Booking</span>
     <span class="marquee-item marquee-sep">✦</span>
@@ -726,8 +732,8 @@
     </div>
     <div class="service-card reveal d2">
       <div class="service-icon">🚢</div>
-      <div class="service-name">Dhow Cruises</div>
-      <p class="service-desc">Traditional Omani dhow experiences along the Muscat coastline and the stunning Musandam fjords.</p>
+      <div class="service-name">Cruises</div>
+      <p class="service-desc">Cruise experiences along the Muscat coastline, Musandam fjords, and international cruise destinations.</p>
     </div>
     <div class="service-card reveal d3">
       <div class="service-icon">🏨</div>
@@ -906,18 +912,7 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div>
-    <svg width="160" height="40" viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="22" r="16" fill="#2A5C45" stroke="#1E4433" stroke-width="1"/>
-      <ellipse cx="20" cy="22" rx="7" ry="16" stroke="rgba(255,255,255,0.25)" stroke-width="0.8" fill="none"/>
-      <line x1="4" y1="22" x2="36" y2="22" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
-      <line x1="6" y1="14" x2="34" y2="14" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-      <line x1="6" y1="30" x2="34" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-      <path d="M8 10 Q20 2 34 12" stroke="#C0272D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      <polygon points="34,12 30,9 31,13" fill="#C0272D"/>
-      <text x="44" y="18" font-family="'Playfair Display', serif" font-size="13" font-weight="700" fill="white" letter-spacing="0.5">Swiss</text>
-      <text x="44" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500" fill="rgba(255,255,255,0.75)" letter-spacing="1.5">TRAVEL &amp; TOURS</text>
-      <text x="44" y="42" font-family="'Inter', sans-serif" font-size="6.5" font-weight="400" fill="rgba(212,168,75,0.7)" letter-spacing="1.8">MUSCAT · OMAN</text>
-    </svg>
+    <img src="1000038711.png" alt="Swiss Travel & Tours" class="footer-logo">
   </div>
   <ul class="footer-links">
     <li><a href="#services">Services</a></li>
